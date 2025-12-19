@@ -92,6 +92,8 @@ header.scrolled {
     padding: 0 2rem;
 }
 
+
+
 .nav-brand {
     font-size: 1.8rem;
     font-weight: 700;
@@ -150,6 +152,121 @@ header.scrolled {
 .nav-cta {
     display: flex;
     align-items: center;
+}
+
+/* Variabel CSS untuk konsistensi warna */
+:root {
+    --primary-bg: #0a0a0a;
+    --secondary-bg: #1a1a1a;
+    --accent-color: #00e5ff;
+    --text-color: #ffffff;
+    --hover-shadow: rgba(0, 229, 255, 0.3);
+}
+
+/* Variabel CSS untuk konsistensi warna */
+:root {
+    --accent-color: #00e5ff;
+    --text-color: #ffffff;
+    --hover-color: #cccccc;
+}
+
+/* Container utama untuk certificates */
+.certificates-content {
+    margin-top: 40px;
+}
+
+/* Grid untuk kategori sertifikat dengan animasi fade-in */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Kategori sertifikat tanpa box */
+.certificate-category {
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.certificate-category h3 {
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Item sertifikat tanpa box, hanya efek hover ringan */
+.certificate-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificate-item {
+    padding: 20px; /* Sedikit diperbesar untuk ruang gambar */
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: 280px; /* Diperbesar dari 180px agar tulisan terbaca */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: filter 0.3s ease;
+}
+
+.certificate-item:hover img {
+    filter: brightness(1.1);
+}
+
+.certificate-item span {
+    display: block;
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.certificate-item:hover span {
+    color: var(--accent-color);
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .certificate-category {
+        padding: 20px;
+    }
+    
+    .certificate-item {
+        padding: 15px;
+    }
+    
+    .certificate-item img {
+        height: 220px; /* Diperbesar di mobile tapi tidak terlalu besar */
+    }
 }
 
 .cta-btn {
