@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | CyberDev Security Specialist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-center">$</div>
+            </div>
+            <p class="loading-text">Loading Profile...</p>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Glassmorphism Navigation -->
+        <nav class="glass-nav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-primary">CYBER</span>
+                        <span class="logo-secondary">DEV</span>
+                    </div>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="about.html" class="nav-link active">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="skills.html" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About Hero -->
+        <section class="about-hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fas fa-user-secret"></i>
+                        <span>SECURITY SPECIALIST</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text">John Doe</span>
+                        <br>Cybersecurity Expert
+                    </h1>
+                    
+                    <p class="hero-description">
+                        With over 5 years of experience in cybersecurity, I specialize in 
+                        penetration testing, network security, and cloud security solutions. 
+                        Passionate about building secure digital ecosystems.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Secured</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Security Monitoring</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=cybersecurity&background=%2300ff9d" alt="Profile">
+                        </div>
+                        <div class="profile-info">
+                            <h3>John Doe</h3>
+                            <p class="title">Cybersecurity Specialist</p>
+                            
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>john@cyberdev.io</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+62 812 3456 7890</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Jakarta, Indonesia</span>
+                                </div>
+                            </div>
+                            
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section">
+            <div class="section-header">
+                <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
+                <p class="section-subtitle">Years of expertise in cybersecurity field</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Cybersecurity Analyst</h3>
+                        <p class="company">PT. Keamanan Siber Indonesia</p>
+                        <p>Leading security team, conducting penetration tests, and developing security strategies for enterprise clients.</p>
+                        <div class="tags">
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">Team Leadership</span>
+                            <span class="tag">Security Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Cybersecurity Consultant</h3>
+                        <p class="company">Deloitte Indonesia</p>
+                        <p>Consulted for banking and fintech companies, focusing on security audits and compliance.</p>
+                        <div class="tags">
+                            <span class="tag">Security Audit</span>
+                            <span class="tag">Compliance</span>
+                            <span class="tag">Risk Assessment</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 - 2019</div>
+                    <div class="timeline-content">
+                        <h3>IT Security Officer</h3>
+                        <p class="company">Bank Central Asia</p>
+                        <p>Responsible for network security monitoring, threat analysis, and endpoint security solutions.</p>
+                        <div class="tags">
+                            <span class="tag">Network Security</span>
+                            <span class="tag">Threat Analysis</span>
+                            <span class="tag">Endpoint Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">CYBER</span>
+                    <span class="logo-secondary">DEV</span>
+                </div>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-links">
+            <a href="index.html" class="mobile-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="mobile-link active">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="skills.html" class="mobile-link">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="projects.html" class="mobile-link">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="contact.html" class="mobile-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
