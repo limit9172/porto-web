@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | CyberDev Security Specialist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-center">$</div>
+            </div>
+            <p class="loading-text">Loading Projects...</p>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Glassmorphism Navigation -->
+        <nav class="glass-nav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-primary">CYBER</span>
+                        <span class="logo-secondary">DEV</span>
+                    </div>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="skills.html" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="projects.html" class="nav-link active">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>SECURITY PROJECTS</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Security <span class="gradient-text">Projects</span>
+                        & Implementations
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Real-world cybersecurity projects ranging from enterprise 
+                        security audits to custom security tool development.
+                    </p>
+                    
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="pentest">Penetration Testing</button>
+                        <button class="filter-btn" data-filter="network">Network Security</button>
+                        <button class="filter-btn" data-filter="cloud">Cloud Security</button>
+                        <button class="filter-btn" data-filter="tools">Security Tools</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="featured-projects">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Major security implementations and solutions</p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-card" data-category="pentest">
+                    <div class="featured-image">
+                        <div class="image-overlay">
+                            <div class="project-badge">COMPLETED</div>
+                            <div class="project-category">Penetration Testing</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="project-title">Enterprise Security Audit - Financial Institution</h3>
+                        <p class="project-desc">Comprehensive security assessment for a major Indonesian bank, covering web applications, network infrastructure, and mobile banking systems.</p>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>3 Months</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-bug"></i>
+                                <span>25+ Vulnerabilities Found</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-chart-line"></i>
+                                <span>95% Risk Reduction</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>Metasploit</span>
+                            <span>Burp Suite</span>
+                            <span>OWASP</span>
+                            <span>Custom Scripts</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-outline">
+                                <span>Case Study</span>
+                                <i class="fas fa-file-alt"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card" data-category="cloud">
+                    <div class="featured-image">
+                        <div class="image-overlay">
+                            <div class="project-badge active">ACTIVE</div>
+                            <div class="project-category">Cloud Security</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="project-title">Multi-Cloud Security Framework</h3>
+                        <p class="project-desc">Implemented a comprehensive security framework for hybrid cloud environment (AWS + Azure) with automated compliance monitoring.</p>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>6 Months</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-server"></i>
+                                <span>50+ Servers</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Zero Breaches</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>Terraform</span>
+                            <span>Kubernetes</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-outline">
+                                <span>Architecture</span>
+                                <i class="fas fa-diagram-project"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Projects Grid -->
+        <section class="projects-grid-section">
+            <div class="section-header">
+                <h2 class="section-title">All <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Complete portfolio of security work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="tools">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <div class="project-badge development">DEVELOPMENT</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Automated Vulnerability Scanner</h3>
+                        <p class="project-desc">Custom Python-based vulnerability scanner for web applications with automated reporting.</p>
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-code"></i>
+                                Python
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                2 Months
+                            </span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="network">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <div class="project-badge completed">COMPLETED</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network Intrusion Detection System</h3>
+                        <p class="project-desc">Custom IDS implementation with real-time threat detection and alerting system.</p>
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-code"></i>
+                                Suricata
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                4 Months
+                            </span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Suricata</span>
+                            <span>ELK Stack</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="pentest">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <div class="project-badge completed">COMPLETED</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Banking Security Assessment</h3>
+                        <p class="project-desc">Security testing for mobile banking applications across iOS and Android platforms.</p>
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-code"></i>
+                                Mobile
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                2 Months
+                            </span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Mobile Security</span>
+                            <span>OWASP MAS</span>
+                            <span>Burp Suite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="cloud">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <div class="project-badge active">ACTIVE</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Zero Trust Architecture Implementation</h3>
+                        <p class="project-desc">Implementing Zero Trust security model for enterprise network infrastructure.</p>
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-code"></i>
+                                ZTA
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                Ongoing
+                            </span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Zero Trust</span>
+                            <span>Identity</span>
+                            <span>Microsegmentation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="tools">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <div class="project-badge development">DEVELOPMENT</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Threat Intelligence Platform</h3>
+                        <p class="project-desc">Custom threat intelligence collection and analysis platform.</p>
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-code"></i>
+                                Python/React
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                3 Months
+                            </span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>React</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="network">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <div class="project-badge completed">COMPLETED</div>
+                        </div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Wireless Network Security Assessment</h3>
+                        <p class="project-desc">Comprehensive wireless network security testing and hardening.</p>
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-code"></i>
+                                Wireless
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                1 Month
+                            </span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Aircrack-ng</span>
+                            <span>Wireshark</span>
+                            <span>Kali Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Statistics -->
+        <section class="project-stats-section">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Vulnerabilities Found</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Security Hours</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Clients Served</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo-container">
+                            <div class="logo-icon">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-primary">CYBER</span>
+                                <span class="logo-secondary">DEV</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">Building secure digital solutions for the modern world.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Navigation</h4>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="skills.html">Skills</a>
+                            <a href="projects.html">Projects</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Services</h4>
+                            <a href="#">Security Audit</a>
+                            <a href="#">Penetration Testing</a>
+                            <a href="#">Cloud Security</a>
+                            <a href="#">Consulting</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Connect</h4>
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 CyberDev. All rights reserved. Protected by Cloudflare.</p>
+                    <div class="security-badge">
+                        <i class="fas fa-shield-check"></i>
+                        <span>Secure Connection</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">CYBER</span>
+                    <span class="logo-secondary">DEV</span>
+                </div>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-links">
+            <a href="index.html" class="mobile-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="mobile-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="skills.html" class="mobile-link">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="projects.html" class="mobile-link active">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="contact.html" class="mobile-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
