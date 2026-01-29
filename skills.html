@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | CyberDev Security Specialist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-center">$</div>
+            </div>
+            <p class="loading-text">Loading Skills</p>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Glassmorphism Navigation -->
+        <nav class="glass-nav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-primary">CYBER</span>
+                        <span class="logo-secondary">DEV</span>
+                    </div>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="skills.html" class="nav-link active">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Skills Hero -->
+        <section class="skills-hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fas fa-tools"></i>
+                        <span>TECHNICAL SKILLS</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Technical <span class="gradient-text">Expertise</span>
+                        & Cybersecurity Skills
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Comprehensive skillset in cybersecurity, programming, 
+                        and infrastructure security. Continuously learning and 
+                        adapting to new technologies.
+                    </p>
+                    
+                    <div class="skills-filter">
+                        <button class="filter-btn active" data-filter="all">All Skills</button>
+                        <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+                        <button class="filter-btn" data-filter="programming">Programming</button>
+                        <button class="filter-btn" data-filter="tools">Tools</button>
+                        <button class="filter-btn" data-filter="cloud">Cloud</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programming Languages -->
+        <section class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Programming <span class="highlight">Languages</span></h2>
+                <p class="section-subtitle">Expertise in multiple programming languages</p>
+            </div>
+            
+            <div class="skills-grid" data-category="programming">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="devicon-python-plain colored"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">Python</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">Automation, scripting, penetration testing tools, data analysis</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="100%"></div>
+                        </div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">C++</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">Performance-critical applications, security tools development</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70%"></div>
+                        </div>
+                        <span class="progress-text">70%</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">System Programming</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="devicon-rust-plain colored"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">Rust</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">Memory-safe applications, security-critical systems</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80%"></div>
+                        </div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Memory Safety</span>
+                        <span class="tag">Systems</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="devicon-ruby-plain colored"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">Ruby</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">Metasploit framework, exploit development, automation</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95%"></div>
+                        </div>
+                        <span class="progress-text">95%</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Metasploit</span>
+                        <span class="tag">Rails</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cybersecurity Skills -->
+        <section class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Cybersecurity <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Specialized security expertise</p>
+            </div>
+            
+            <div class="skills-grid" data-category="cyber">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">Penetration Testing</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">Web, network, and mobile application penetration testing</p>
+                    <div class="skill-tools">
+                        <span class="tool">Metasploit</span>
+                        <span class="tool">Burp Suite</span>
+                        <span class="tool">Nmap</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">Network Security</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">Firewall configuration, IDS/IPS, network monitoring</p>
+                    <div class="skill-tools">
+                        <span class="tool">pfSense</span>
+                        <span class="tool">Wireshark</span>
+                        <span class="tool">Snort</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">Digital Forensics</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">Incident response, malware analysis, disk forensics</p>
+                    <div class="skill-tools">
+                        <span class="tool">Autopsy</span>
+                        <span class="tool">Volatility</span>
+                        <span class="tool">FTK</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3 class="skill-title">Cloud Security</h3>
+                            <div class="skill-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-desc">AWS/Azure security, container security, cloud compliance</p>
+                    <div class="skill-tools">
+                        <span class="tool">AWS</span>
+                        <span class="tool">Kubernetes</span>
+                        <span class="tool">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Software -->
+        <section class="tools-section">
+            <div class="section-header">
+                <h2 class="section-title">Tools & <span class="highlight">Software</span></h2>
+                <p class="section-subtitle">Development and security tools expertise</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card" data-category="tools">
+                    <div class="tool-icon">
+                        <i class="devicon-linux-plain colored"></i>
+                    </div>
+                    <h3>Linux</h3>
+                    <p>System administration, security hardening</p>
+                </div>
+                
+                <div class="tool-card" data-category="tools">
+                    <div class="tool-icon">
+                        <i class="devicon-git-plain colored"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version control, CI/CD pipelines</p>
+                </div>
+                
+                <div class="tool-card" data-category="tools">
+                    <div class="tool-icon">
+                        <i class="devicon-docker-plain colored"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <p>Containerization, deployment</p>
+                </div>
+                
+                <div class="tool-card" data-category="tools">
+                    <div class="tool-icon">
+                        <i class="devicon-visualstudio-plain colored"></i>
+                    </div>
+                    <h3>VS Code</h3>
+                    <p>Development environment</p>
+                </div>
+                
+                <div class="tool-card" data-category="cyber">
+                    <div class="tool-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Metasploit</h3>
+                    <p>Penetration testing framework</p>
+                </div>
+                
+                <div class="tool-card" data-category="cyber">
+                    <div class="tool-icon">
+                        <i class="fas fa-spider"></i>
+                    </div>
+                    <h3>Burp Suite</h3>
+                    <p>Web application testing</p>
+                </div>
+                
+                <div class="tool-card" data-category="cyber">
+                    <div class="tool-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Nmap</h3>
+                    <p>Network discovery & scanning</p>
+                </div>
+                
+                <div class="tool-card" data-category="cyber">
+                    <div class="tool-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>IDA Pro</h3>
+                    <p>Reverse engineering</p>
+                </div>
+                
+                <div class="tool-card" data-category="cloud">
+                    <div class="tool-icon">
+                        <i class="devicon-amazonwebservices-plain colored"></i>
+                    </div>
+                    <h3>AWS</h3>
+                    <p>Cloud infrastructure</p>
+                </div>
+                
+                <div class="tool-card" data-category="cloud">
+                    <div class="tool-icon">
+                        <i class="devicon-azure-plain colored"></i>
+                    </div>
+                    <h3>Azure</h3>
+                    <p>Microsoft cloud services</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="certifications-section">
+            <div class="section-header">
+                <h2 class="section-title">Professional <span class="highlight">Certifications</span></h2>
+                <p class="section-subtitle">Validated expertise and qualifications</p>
+            </div>
+            
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Certified Ethical Hacker (CEH)</h3>
+                        <p class="cert-org">EC-Council • 2018</p>
+                        <p>Ethical hacking and penetration testing</p>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>CompTIA Security+</h3>
+                        <p class="cert-org">CompTIA • 2020</p>
+                        <p>Foundational cybersecurity skills</p>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>AWS Security Specialty</h3>
+                        <p class="cert-org">Amazon Web Services • 2022</p>
+                        <p>Cloud security specialization</p>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>CISSP (In Progress)</h3>
+                        <p class="cert-org">(ISC)² • 2023</p>
+                        <p>Advanced information security</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo-container">
+                            <div class="logo-icon">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-primary">CYBER</span>
+                                <span class="logo-secondary">DEV</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">Building secure digital solutions for the modern world.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Navigation</h4>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="skills.html">Skills</a>
+                            <a href="projects.html">Projects</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Services</h4>
+                            <a href="#">Security Audit</a>
+                            <a href="#">Penetration Testing</a>
+                            <a href="#">Cloud Security</a>
+                            <a href="#">Consulting</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Connect</h4>
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 CyberDev. All rights reserved. Protected by Cloudflare.</p>
+                    <div class="security-badge">
+                        <i class="fas fa-shield-check"></i>
+                        <span>Secure Connection</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">CYBER</span>
+                    <span class="logo-secondary">DEV</span>
+                </div>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-links">
+            <a href="index.html" class="mobile-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="mobile-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="skills.html" class="mobile-link active">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="projects.html" class="mobile-link">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="contact.html" class="mobile-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+</html>
